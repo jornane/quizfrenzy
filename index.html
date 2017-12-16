@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<title>Quiz Frenzy</title>
+<style type="text/css">
+/* uncomment for cheating
+.correct {
+	background: #0a0;
+	color: white;
+}
+*/
+.hidden {
+	display: none;
+}
+.active {
+	display: block;
+}
+</style>
+
+<h1>Quiz Frenzy</h1>
+
+<form id="questions">
+
+<div id="submitpage">
+	<input type="submit" value="Submit">
+	<p id="result">	
+</div>
+	
+</form>
+
+<div id="controls">
+	<input type="button" value="&lt;" id="prev">
+	<input type="button" value="&gt;" id="next">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="quiz.js"></script>
+<script src="quizfrenzy.js"></script>
+
+<script type="application/javascript">
+	runQuiz(quiz);
+</script>
